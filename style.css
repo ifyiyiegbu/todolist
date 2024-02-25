@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: poppins;
+    background: url(./images/v619-peipei-43-planner.jpg);
+    background-size: 70cap;
+}
+
+.mainContainer{
+   
+    margin: 5em;
+    padding: 3rem;
+    
+}
+
+.appHeader{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 2em;
+}
+
+.icon{
+    width: 70px;
+}
+
+.appName{
+    color: #a52a2a;
+    font-size: 3rem;
+}
+
+.taskFields{
+    display: flex;
+    align-items: center;
+    gap: 10em;
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+}
+
+input{
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.add-button{
+    background-color: #cf4d4d;
+    padding: 10px 30px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ul li{
+    list-style: none;
+    font-size: 1.2rem;
+    user-select: none;
+    padding: 2em 1em 2em 3em;
+    position: relative;
+    cursor: pointer;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+    background-image: url(./images/video_14008799.png);
+    background-size: cover;
+    background-position: center;
+    left: 8px;
+    cursor: pointer;
+}
+
+ul li.checked{
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(./images/checkbox_7079911.png);
+}
+
+ul li span{
+    position: absolute;
+    text-align: center;
+    right: 0;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+ul li span:hover{
+    background-color: #cf4d4d;
+}
