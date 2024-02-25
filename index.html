@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mainContainer">
+        <header class="appHeader">
+            <img src="./images/icon.png" class="icon">
+            <h1 class="appName">To Do List</h1>
+        </header>
+        <main>
+            <section class="taskFields">
+                <input type="text" id="taskinput" placeholder="Add a new task">
+                <button class="add-button" onclick="addTask()">Add</button>
+            </section>
+            <section class="taskList">
+                <ul id="listedtasks">
+                    <!-- <li class="checked">Task 1</li>
+                    <li>Task 2</li>
+                    <li>Task 3</li>
+                    <li>Task 4</li> -->
+                </ul>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
